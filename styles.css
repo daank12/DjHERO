@@ -1,0 +1,56 @@
+.game-container {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    background-color: aqua;
+  }
+  
+  .note-container {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  
+  .note {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: white;
+    color: blue;
+    position: absolute;
+    bottom: 0;
+    transition: bottom 0.5s linear;
+  }
+  
+  .guitar {
+        position: absolute;
+        left: 200px;
+        bottom: 0;
+        border: 20px solid brown;
+        border-radius: 10px;
+        background: linear-gradient(to bottom, #8B4513, #D2B48C);
+        width: 400px;
+        height: 200px;
+      
+  }
+  
+  .note[data-key="70"] {
+    left: 0;
+  }
+  
+  .note[data-key="71"] {
+    left: 90px;
+  }
+  
+  .note[data-key="72"] {
+    left: 180px;
+  }
+  
+  .note[data-key="74"] {
+    left: 270px;
+  }
